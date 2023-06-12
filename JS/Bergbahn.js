@@ -36,18 +36,21 @@ $(document).ready(function(){
     nextArrow: $("#graphic #next")
   })
 
+
+  $(window).on("load resize", updateImage, cardSize);
+  //kartenbreite responsive
   function cardSize() {
     var screenWidth = $(window).width()
     var trackWidth = $(".carousel-slider").width();
     var cardWidth;
-    if (screenWidth >= 768){
+    if (screenWidth >= 770){
       cardWidth = trackWidth /4
     }
-    else if (screenWidth <= 768 && screenWidth > 576){
+    else if (screenWidth <= 770 && screenWidth > 576){
       cardWidth = trackWidth /3;
     }
     else if (screenWidth <= 576){
-      cardWidth = trackWidth /2
+      cardWidth = trackWidth /1.5
     }
     
 
@@ -80,7 +83,7 @@ $(document).ready(function(){
     $("#standart").attr("src", images[imageIndex])
 
   }
-  $(window).on("load resize", updateImage, cardSize);
+  $(window).on("load resize", updateImage);
   
   //nav-info-popup
   $(document).click(function(e){

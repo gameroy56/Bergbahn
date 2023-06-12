@@ -94,9 +94,11 @@ div#graphic {
 img.graphic {
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 img#standart{
   object-fit: fill;
+  object-position: center;
 }
 div#bilder-carousel{
   width: 100%;
