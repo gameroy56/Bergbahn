@@ -1,0 +1,715 @@
+main#page {
+  display: flex;
+}
+main#information { 
+  width: 70%;
+  border: 1px green solid;
+  padding: 0px 20px;
+}
+div#willkommen {
+  margin-bottom: 30px;
+  font-family: Arial;
+}
+h2 {
+  color: #284528;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-style: italic;
+}
+p.text{
+  max-width: 95%;
+  line-height: 23px;
+  border: 1px red dotted;
+}
+h3 {
+  font-size: 23px;
+  color: #699333;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  height: fit-content;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  flex: 1;
+  max-width: 310px;
+  flex-shrink: 0;
+
+
+  font-size: 160%;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  background-color: #b3d2344b;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  color: #699333;
+  padding-left: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.255);
+  cursor: pointer;
+  transition: all 200ms;
+}
+nav button:hover {
+  background-color: #b3d23470;
+}
+nav button img {
+  width: 22%;
+  margin-right: 15px;
+}
+
+section.karten.slick-carousel{
+  position: relative;
+  height: fit-content;
+  max-width: 1050px;
+  margin: 30px auto; 
+  display: flex !important;
+  align-items: center;
+  border: 1px red dotted;
+
+}
+div.karten.carousel-slider {
+  width: 100%;
+  
+}
+div.karten.carousel-slider .slick-track{
+  height: 500px;
+  display: flex ;
+  overflow: hidden;
+  align-items: stretch;
+  margin: 0;
+}
+
+div.karten.carousel-boxes{
+  display: block;
+  height: 400px;
+  width: 220px;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.255);
+  margin: 0px 15px;
+  background-color: white;
+  z-index: 1;
+/* linker hintergrund */
+  opacity: 0.4;
+  position: relative;
+  top: 2px;
+  right: -360px;
+}
+.karten.slick-current + .karten.slick-active + .karten.slick-slide {
+ /* rechter hintergrund */
+  right: 50px;
+}
+div.karten.carousel-boxes.slick-active{
+  opacity: 1;
+  top: 40px;
+  position: relative;
+  left: 0.47%;
+  z-index: 2;
+}
+div#prev, #next  {
+  height: 100%;
+  width: 60px;
+  cursor: pointer;
+  border: none;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+h4.carousel-boxes-top{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 27px;
+  color: #284528;
+  margin: 0px;
+  height: 50px;
+}
+p.carousel-boxes-text{
+  font-size: 13px;
+  font-family: Arial;
+  line-height: 20px;
+  height: fit-content;
+}
+div.carousel-boxes-bottom{
+  display: flex;
+  margin: 30px 0px;
+}
+div.carousel-boxes-bottom-time{
+  font-size: 10px;
+  font-family: Arial;
+  align-items: center;
+  display: flex;
+  white-space: nowrap;
+  margin-right: 40px;
+}
+div.carousel-boxes-bottom-amount{
+  font-size: 10px;
+  font-family: Arial;
+  align-items: center;
+  white-space: nowrap;
+  display: flex;
+}
+img.box{
+  width: 23px;
+  margin-right: 5px;
+}
+span.informationen{
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #699333;
+  position: absolute;
+  right: 20;
+  bottom: 20;
+}
+
+@media  (min-width: 1201px ) and (max-width: 1399px){
+  
+  div.karten.carousel-boxes{  
+    height: 430px;
+    width: 190px;
+    right: -380px;
+  }
+  .karten.slick-current + .karten.slick-active + .karten.slick-slide {
+    right: 40px;
+  }
+  div.karten.carousel-boxes.slick-active{
+    left: 0.50%;
+  }
+  h4.carousel-boxes-top{
+    font-size: 19px;
+  }
+}
+
+@media  (min-width: 992px) and (max-width: 1200px) {
+  main#page {
+    display: flex;
+  }
+
+  div#willkommen {
+    margin-bottom: 30px;
+    font-family: Arial;
+  }
+  h2 {
+    color: #284528;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  h3 {
+    font-size: 23px;
+    color: #699333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: 60px;;
+  }
+  nav button {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 310px;
+    height: 100%;
+    font-size: 160%;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    background-color: #b3d2344b;
+    letter-spacing: -2px;
+    color: #699333;
+    padding-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.255);
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  nav button:hover {
+    background-color: #b3d23470;
+  }
+  nav button img {
+    width: 22%;
+    margin-right: 15px;
+  }
+  
+  section.karten.slick-carousel{
+    position: relative;
+    height: fit-content;
+    flex: 1;
+    max-width: 1050px;
+    margin: 30px auto; 
+    display: flex;
+    align-items: center;
+  }
+  div.karten.carousel-slider {
+    width: 100%;
+    
+  }
+  div.karten.carousel-slider .slick-track{
+    height: 500px;
+    display: flex ;
+    overflow: hidden;
+    align-items: stretch;
+    margin: 0;
+  }
+  
+  div.karten.carousel-boxes{
+    display: block;
+    height: 400px;
+    width: 185px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.255);
+    margin: 0px 15px;
+    background-color: white;
+    z-index: 1;
+  
+    opacity: 0.4;
+    position: relative;
+    top: 2px;
+    right: -380px;
+  }
+  .karten.slick-current + .karten.slick-active + .karten.slick-slide {
+    right: 30px;
+  }
+  div.karten.carousel-boxes.slick-active{
+    opacity: 1;
+    top: 40px;
+    position: relative;
+    left: 0.5%;
+    z-index: 2;
+  }
+  div#prev, #next  {
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  h4.carousel-boxes-top{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 27px;
+    color: #284528;
+    margin: 0px;
+    height: 50px;
+  }
+  p.carousel-boxes-text{
+    font-size: 13px;
+    font-family: Arial;
+    line-height: 20px;
+    height: fit-content;
+  }
+  div.carousel-boxes-bottom{
+    display: flex;
+    margin: 30px 0px;
+  }
+  div.carousel-boxes-bottom-time{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    display: flex;
+    margin-right: 40px;
+  }
+  div.carousel-boxes-bottom-amount{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    display: flex;
+  }
+  img.box{
+    width: 23px;
+    margin-right: 5px;
+  }
+  span.informationen{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #699333;
+    position: absolute;
+    right: 20;
+    bottom: 20;
+  }
+}
+
+@media  (min-width: 771px) and (max-width: 991px) {
+  main#page {
+    display: flex;
+    flex-direction: column;
+  }
+  main#information{
+   width: auto;
+  }
+ 
+  div.karten.carousel-slider {
+    width: 100%;
+    display: flex;
+  }
+  div.karten.carousel-slider .slick-track{
+    height: 470px;
+    display: flex;
+    
+  }
+  
+  div.karten.carousel-boxes{
+    width: 200px;
+    margin: 0px 10px;
+  /* linker hintergrund */
+    right: -440px;
+  }
+  .karten.slick-current + .karten.slick-active + .karten.slick-slide {
+   /* rechter hintergrund */
+    right: 0px;
+  }
+  div.karten.carousel-boxes.slick-active{
+    /* vordere */
+    top: 20px;
+    left: 0.64%;
+  }
+  
+  h4.carousel-boxes-top{
+    font-size: 21px;
+  }
+}
+
+@media  (min-width: 576px) and  (max-width: 770px){
+  main#page {
+    display: flex;
+    flex-direction: column;
+  }
+  main#information {
+      width: auto;
+      border: 1px green solid;
+  }
+  div#willkommen {
+    margin-bottom: 30px;
+    font-family: Arial;
+  }
+  h2 {
+    color: #284528;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  h3 {
+    font-size: 23px;
+    color: #699333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  nav button {
+    font-size: 140%;
+  }
+ 
+  nav button img {
+    width: 30%;
+    margin-right: 2%;
+  }
+  
+  section.karten.slick-carousel{
+    position: relative;
+    height: fit-content;
+    flex: 1;
+    max-width: 1050px;
+    margin: 30px auto; 
+    display: flex;
+    align-items: center;
+  }
+  div.karten.carousel-slider {
+    width: 100%;
+    
+  }
+  div.karten.carousel-slider .slick-track{
+    height: 500px;
+    width: 100%;
+    left: -150px
+    
+  }
+  
+  div.karten.carousel-boxes{
+    display: block;
+    height: 400px;
+    width: 230px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.255);
+    margin: 0px 15px;
+    background-color: white;
+    z-index: 1;
+  /* linker hintergrund */
+    opacity: 0.4;
+    position: relative;
+    top: 2px;
+    right: -70px;
+  }
+  .karten.slick-current + .karten.slick-active + .karten.slick-slide {
+   /* rechter hintergrund */
+    right: 440px;
+  }
+  div.karten.carousel-boxes.slick-active{
+    opacity: 1;
+    top: 40px;
+    position: relative;
+    left: -0.52%;
+    z-index: 2;
+  }
+  div.slick-list{
+
+  }
+  div#prev, #next  {
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  h4.carousel-boxes-top{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 27px;
+    color: #284528;
+    margin: 0px;
+    height: 50px;
+  }
+  p.carousel-boxes-text{
+    font-size: 13px;
+    font-family: Arial;
+    line-height: 20px;
+    height: fit-content;
+  }
+  div.carousel-boxes-bottom{
+    display: flex;
+    margin: 30px 0px;
+  }
+  div.carousel-boxes-bottom-time{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+    margin-right: 40px;
+  }
+  div.carousel-boxes-bottom-amount{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+  }
+  img.box{
+    width: 23px;
+    margin-right: 5px;
+  }
+  span.informationen{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #699333;
+    position: absolute;
+    right: 20;
+    bottom: 20;
+  }
+}
+
+@media  (max-width: 576px){
+  main#page {
+    flex-direction: column;
+  }
+  main#information {
+      width: auto;
+      padding: 0px 10px;
+      border: 1px green solid;
+  }
+  div#willkommen {
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-family: Arial;
+  }
+  h2 {
+    color: #284528;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  h3 {
+    font-size: 23px;
+    color: #699333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  nav button {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 70px;
+    font-size: 160%;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    background-color: #b3d2344b;
+    letter-spacing: -2px;
+    white-space: nowrap;
+    color: #699333;
+    padding-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.255);
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  nav button:hover {
+    background-color: #b3d23470;
+  }
+  nav button img {
+    width: 17%;
+    margin-right: 15px;
+  }
+  
+  section.karten.slick-carousel{
+    position: relative;
+    height: fit-content;
+    flex: 1;
+    max-width: 1050px;
+    margin: 30px auto; 
+    display: flex;
+    align-items: center;
+  
+  }
+  div.karten.carousel-slider {
+    width: 100%;
+    
+  }
+  div.karten.carousel-slider .slick-track{
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  div.karten.carousel-boxes{
+    display: block;
+    height: 400px;
+    width: 220px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.255);
+    margin: 0px 15px;
+    background-color: white;
+    z-index: 1;
+  /* linker hintergrund */
+    opacity: 0.4;
+    position: relative;
+    top: 2px;
+    right: -165px;
+  }
+  .karten.slick-current + .karten.slick-active + .karten.slick-slide {
+   /* rechter hintergrund */
+    right: -150px;
+  }
+  div.karten.carousel-boxes.slick-active{
+    opacity: 1;
+    top: 40px;
+    position: relative;
+    left: 0.47%;
+    z-index: 2;
+  }
+  div#prev, #next  {
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  h4.carousel-boxes-top{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 27px;
+    color: #284528;
+    margin: 0px;
+    height: 50px;
+  }
+  p.carousel-boxes-text{
+    font-size: 13px;
+    font-family: Arial;
+    line-height: 20px;
+    height: fit-content;
+  }
+  div.carousel-boxes-bottom{
+    display: flex;
+    margin: 30px 0px;
+  }
+  div.carousel-boxes-bottom-time{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+    margin-right: 40px;
+  }
+  div.carousel-boxes-bottom-amount{
+    font-size: 10px;
+    font-family: Arial;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+  }
+  img.box{
+    width: 23px;
+    margin-right: 5px;
+  }
+  span.informationen{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #699333;
+    position: absolute;
+    right: 20;
+    bottom: 20;
+  }
+}

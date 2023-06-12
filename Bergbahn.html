@@ -1,0 +1,802 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thüringer Bergbahn</title>
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/Main.css" />
+    <link rel="stylesheet" href="CSS/General.css" />
+    <link rel="stylesheet" href="CSS/Bottom.css" />
+    <link rel="stylesheet" href="CSS/Aside.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <script src="/extras/jquery-3.6.3.js"></script>
+    <script src="/extras/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="/extras/slick/slick.css">
+   
+    <script src="JS/Bergbahn.js"></script>
+  </head>
+
+  <body>
+    
+    <div id="background"></div> 
+    <header>
+      <div id="head">
+        <div id="left">
+          <div class="left-icons" id="Cabrio">
+            <img class="left-icons" src="Logos/Icons/cabrio.svg" />
+            <span class="left-icons">Cabrio fährt nicht</span>
+            <div
+              class="left-icons-hover"
+              style="background-color: 699333"
+            ></div>
+          </div>
+          <div class="left-icons" id="Cloud">
+            <img class="left-icons" src="Logos/Icons/clouds.svg" />
+            <span class="left-icons">16° C, Sonnig</span>
+          </div>
+          <div class="left-icons" id="Webcam">
+            <img class="left-icons" src="Logos/Icons/webcam.svg" />
+            <span class="left-icons">Webcam</span>
+            <div
+              class="left-icons-hover"
+              style="background-color: #cf7027; width: 140%; left: -10px"
+            ></div>
+          </div>
+        </div>
+
+        <div id="right">
+          <div class="right-icons">
+            <div><img src="Logos/Icons/bag.svg" /></div>
+            <div class="right-icons-text">Warenkorb</div>
+          </div>
+          <div class="right-icons">
+            <div><img src="Logos/Icons/phone.svg" /></div>
+            <div class="right-icons-text">036705 20134</div>
+          </div>
+          <div class="right-icons">
+            <img src="Logos/Icons/facebook.svg" />
+          </div>
+          <div class="right-icons">
+            <img src="Logos/Icons/instagram.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="logo_box">
+        <div id="logo_inner">
+          <a  href="Bergbahn.html">
+            <img id="logo_img" src="Logos/Icons/Bergbahn Logo.svg" />
+          </a>
+        </div>
+        
+        
+      </div>
+      <div id="graphic">
+        <div id="prev" style="left: 25px;">
+          <img style="width: 70%;" src="Logos/Icons/arrow-left.svg">
+        </div>
+
+        <div id="bilder-carousel">
+          <img class="graphic" id="standart" src="Logos/Bilder/main/view-groesser-gleich-1400px.png"/>
+          <img class="graphic" src="Logos/Bilder/2_Bahnen.jpg"/>
+          <img class="graphic" src="Logos/Bilder/alter_zug.jpg"/>
+          <img class="graphic" src="Logos/Bilder/cabrio_und_normal.jpg"/>
+          <img class="graphic" src="Logos/Bilder/Vater_Kind.jpg"/>
+          <img class="graphic" src="Logos/Bilder/Wegschilder.jpg"/>
+          <img class="graphic" src="Logos/Bilder/Zug.jpg"/>
+        </div>
+       
+        <div id="next" style="right: 5px;">
+          <img style="width: 70%;" src="Logos/Icons/arrow-right.svg">
+       </div>
+        
+        <div id="yellow">
+          <div id="yellow-inner">
+            <div id="yellow-shop">Shop</div>
+            <div id="yellow-desc">Tickets | Gutscheine | Souvenirs</div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <button id="burger"> 
+          <img src="Logos/Icons/burger-button.svg"></button>
+        <div id="bottom-text-outer-box">
+          <button class="bottom-text">
+            Besucherinfo
+            <div class="bottom-text-hover" >
+              <div class="bottom-text-hover-img">
+                <img src="Logos/Icons/conductor.svg" />
+              </div>
+            </div>
+            <div class="bottom-text-arrow"></div>
+          </button>
+          <nav class="info-overlay" style="background: linear-gradient(205deg,#8ab5c533 17%,white 0), linear-gradient(190deg,#bcdae6 25px,white 0);">
+            <div class="info-overlay-X">
+              <img src="Logos/Icons/cross.svg">
+            </div>
+            <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+            <div class="info-overlay-info">
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                 <img src="Logos/Icons/conductor.svg">
+                </div>
+              Streckennetz
+              </div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Fahrplan</div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Tarife</div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Anreise</div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Barrierefreiheit</div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Hunde</div>
+              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+                <img src="Logos/Icons/conductor.svg">
+               </div>Infomaterial</div>
+            </div>
+  
+          </nav>
+  
+          <button class="bottom-text">
+            Bergbahnland
+            <div class="bottom-text-hover" >
+              <div class="bottom-text-hover-img">
+                <img src="Logos/Icons/conductor.svg" />
+              </div>
+            </div>
+            <div class="bottom-text-arrow"></div>
+          </button>
+          <nav class="info-overlay" style="background: linear-gradient(200deg,#8ab5c533 12%,white 0), linear-gradient(187deg,#bcdae6 25px,white 0);">
+            <div class="info-overlay-X">
+              <img src="Logos/Icons/cross.svg">
+            </div>
+            <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+            <div class="info-overlay-info">
+  
+              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                Attraktionen
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Rundgang durch das Bergbahnland
+              </div>
+  
+              <div class="info-overlay-info-inside">
+               <div class="info-overlay-info-inside-con">
+                 <img src="Logos/Icons/conductor.svg">
+                </div>Bergbahn mit drei Wagen
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Flachstrecke / Ölitätenwagen
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Schwarzatahlbahn / Fürstenkutsche
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Maschinarium
+              </div>
+  
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Fröbelwald
+                </div>
+              </div>
+  
+            <div class="info-overlay-info">
+  
+                <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                  Gastronomie
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Die Talstation
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                 <div class="info-overlay-info-inside-con">
+                   <img src="Logos/Icons/conductor.svg">
+                  </div>Speisewagen
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Bahnhofladen
+                </div>
+               </div>
+  
+            <div class="info-overlay-info">
+  
+                  <div class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
+                    Schwarzatal entdecken
+                  </div>
+      
+                  <div class="info-overlay-info-inside">
+                    <div class="info-overlay-info-inside-con">
+                      <img src="Logos/Icons/conductor.svg">
+                    </div>Übersicht
+                  </div>
+      
+                  <div class="info-overlay-info-inside">
+                   <div class="info-overlay-info-inside-con">
+                     <img src="Logos/Icons/conductor.svg">
+                    </div>Veranstaltungen der Region
+                  </div>
+               </div>
+  
+            <div class="info-overlay-info">
+  
+                    <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                      Touren
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                      </div>Für Familien
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                     <div class="info-overlay-info-inside-con">
+                       <img src="Logos/Icons/conductor.svg">
+                      </div>Für Paare
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                      </div>Für Gruppen
+                    </div>
+  
+            </div>
+          </nav>
+          
+          <button class="bottom-text">
+            Veranstaltungen
+            <div class="bottom-text-hover">
+              <div class="bottom-text-hover-img">
+                <img src="Logos/Icons/conductor.svg" />
+              </div>
+            </div>
+            <div class="bottom-text-arrow"></div>
+          
+          </button>
+          <nav class="info-overlay" style="background: linear-gradient(205deg,#8ab5c533 14%,white 0), linear-gradient(191deg,#bcdae6 25px,white 0);">
+            <div class="info-overlay-X">
+              <img src="Logos/Icons/cross.svg">
+            </div>
+            <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+            <div class="info-overlay-info">
+  
+              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                Bergbahnfeste
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Nostalgietag
+              </div>
+  
+              <div class="info-overlay-info-inside">
+               <div class="info-overlay-info-inside-con">
+                 <img src="Logos/Icons/conductor.svg">
+                </div>Bergbahnjubiläum
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Lichterglanz
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Advent an der Bergbahn
+              </div>
+  
+            </div>
+  
+            <div class="info-overlay-info" style="margin-right: 70px;">
+  
+                <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                  Veranstaltungen in der <br> Region
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Veranstalungskalender
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                 <div class="info-overlay-info-inside-con">
+                   <img src="Logos/Icons/conductor.svg">
+                  </div>Tag der Sommerfrische
+                </div>
+  
+              </div>
+          </nav>
+         
+          <button class="bottom-text">
+            Über uns
+            <div class="bottom-text-hover">
+              <div class="bottom-text-hover-img">
+                <img src="Logos/Icons/conductor.svg" />
+              </div>
+            </div>
+            <div class="bottom-text-arrow"></div>
+          </button>
+          <nav class="info-overlay" style="background: linear-gradient(200deg,#8ab5c533 12%,white 0), linear-gradient(187deg,#bcdae6 25px,white 0);">
+            <div class="info-overlay-X">
+              <img src="Logos/Icons/cross.svg">
+            </div>
+            <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+            <div class="info-overlay-info">
+  
+              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                Bergbahn
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Geschichte
+              </div>
+  
+              <div class="info-overlay-info-inside">
+               <div class="info-overlay-info-inside-con">
+                 <img src="Logos/Icons/conductor.svg">
+                </div>Dr. Wolfgang Bäseler
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Funktionsweise
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Fahrzeuge
+              </div>
+  
+              <div class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Rekonstruktion der Bergbahn
+              </div>
+  
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Historische Bilder
+                </div>
+              </div>
+  
+            <div class="info-overlay-info">
+  
+                <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                  Flachstrecke
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Geschichte
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                 <div class="info-overlay-info-inside-con">
+                   <img src="Logos/Icons/conductor.svg">
+                  </div>Triebwagen
+                </div>
+    
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                  </div>Sonderfahrzeuge
+                </div>
+  
+                <div class="info-overlay-info-inside">
+                  <div class="info-overlay-info-inside-con">
+                    <img src="Logos/Icons/conductor.svg">
+                   </div>Historische Bilder
+                 </div>
+  
+               </div>
+  
+            <div class="info-overlay-info">
+  
+                  <div class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
+                    Schwarzatalbahn
+                  </div>
+      
+                  <div class="info-overlay-info-inside">
+                    <div class="info-overlay-info-inside-con">
+                      <img src="Logos/Icons/conductor.svg">
+                    </div>Geschichte
+                  </div>
+      
+                  <div class="info-overlay-info-inside">
+                   <div class="info-overlay-info-inside-con">
+                     <img src="Logos/Icons/conductor.svg">
+                    </div>Triebwagen
+                  </div>
+  
+                  <div class="info-overlay-info-inside">
+                    <div class="info-overlay-info-inside-con">
+                      <img src="Logos/Icons/conductor.svg">
+                     </div>Historische Bilder
+                   </div>
+  
+               </div>
+  
+            <div class="info-overlay-info">
+  
+                    <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                      Weiteres
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                      </div>Kontakt
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                     <div class="info-overlay-info-inside-con">
+                       <img src="Logos/Icons/conductor.svg">
+                      </div>Gästebefragung
+                    </div>
+        
+                    <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                      </div>Förderverein OBS
+                    </div>
+  
+                    <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                       </div>Bergbahnkönigin
+                     </div>
+  
+                     <div class="info-overlay-info-inside">
+                      <div class="info-overlay-info-inside-con">
+                        <img src="Logos/Icons/conductor.svg">
+                       </div>Nachhaltigkeit
+                     </div>
+  
+            </div>
+          </nav>
+
+          <div id="bottom-links-outer">
+            <a href="https://www.thueringerbergbahn.com/shop/warenkorb/" class="bottom-links">
+              <img  style="fill: white;"  src="Logos/Icons/bag_white.svg">
+            </a>
+            <a href="tel:03670520134" class="bottom-links">
+              <img src="Logos/Icons/phone_white.svg" alt="">
+            </a>
+            <a href="https://de-de.facebook.com/thueringerbergbahn/" class="bottom-links BgC_dark">
+              <img src="Logos/Icons/facebook_white.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/thueringerbergbahn/" class="bottom-links BgC_dark">
+              <img src="Logos/Icons/instagram_white.svg" alt="">
+            </a>
+          </div>
+        </div>
+        
+      
+      </div>
+    </header>
+
+    <main id="page">
+      <main id="information">
+        <div id="willkommen">
+          <h2>Herzlich willkommen im Bergbahnland!</h2>
+          <p class="text">
+            Die Oberweißbacher Bergbahn ist das Herzstück im Bergbahnland. Sie
+            ist die steilste Standseilbahn zum Transport normalspuriger
+            Eisenbahnwagen und ein richtiges Kleinod. Im Bergbahnland gibt es
+            jedoch noch viel mehr zu entdecken: Die elektrifizierte Flachstrecke
+            mit Olitätenwagen, die Schwarzatalbahn durch das wildromantisch
+            Schwarzatal, den Fröbelwald und das Maschinarium.
+          </p>
+        </div>
+        <div id="vorschläge">
+          <div>
+            <h3>Unsere Vorschläge für Ihren Ausflug</h3>
+          </div>
+          <nav>
+            <button class="Ausflug">
+              <img src="Logos/Icons/family.svg" />
+              für Familien
+            </button>
+            <button class="Ausflug">
+              <img src="Logos/Icons/pair.svg" />
+              für Paare
+            </button>
+            <button class="Ausflug">
+              <img src="Logos/Icons/group.svg" />
+              für Gruppen
+            </button>
+          </nav>
+          <div id="carousel"></div>
+        </div>
+
+        <section class="karten slick-carousel">
+
+          <div id="prev" style="left: 20px;">
+            <img style="width: 70%;" src="Logos/Icons/arrow-left.svg">
+          </div>
+
+          <div class="karten carousel-slider">
+            <div class="karten carousel-boxes"> <!--Bergbahntour-->
+              <h4 class="carousel-boxes-top">Bergbahntour</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Mit unserer Bahnvielfalt erleben Sie die Schönheit des Thüringer
+                Waldes. Im Maschinarium erfahren Sie die technischen Raffinessen
+                unserer Bergbahn. Ihr Ausflug wird mit einem leckeren Happen im
+                Speisewagen und der Heimreise mit dem Cabrio-Wagen abgerundet.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>6,5 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/family.svg" />
+                  <span>FÜR <span style="font-size: 12px">F</span>AMILIEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+
+              
+            </div>
+
+            <div class="karten carousel-boxes"> <!--Kräutertour-->
+              <h4 class="carousel-boxes-top">Kräutertour</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Mit unserer Bergbahn in den Thüringer Wald. Lernen Sie die
+                Vielfalt unserer Heimischen Kräuter kennen. Im Olitätenwagen
+                erfahren Sie mehr mit Kräutermemory, Dustkasten und Ferngläsern.
+                Ihr erlangtes Wissen können Sie im Walderlebnispfad Fröbelwald
+                testen.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"" />
+                  <span>5 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/group.svg" />
+                  <span>FÜR <span style="font-size: 12px">G</span>RUPPEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+            <div class="karten carousel-boxes"> <!--Buckelapotheker-->
+              <h4 class="carousel-boxes-top">Auf den Spuren der Buckelapotheker</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Von der Bergbahnstation Lichtenstein geht es durch den Fröbelwald hin zur
+                Lichten-hainer Höhe. In Oberweißbach können Sie das Memorialmuseum
+                "Friedrich Fröbel" besuchen. Auf dem Weg nach Cursdorf können Sie Halt an
+                der Kräuterhütte, dem Fröbelturm und der Himmelsleiter machen.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>7 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/pair.svg" />
+                  <span>FÜR <span style="font-size: 12px">P</span>AARE</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+            <div class="karten carousel-boxes" > <!--Kurztour gruppen-->
+              <h4 class="carousel-boxes-top">Kurztour für Gruppen</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Sollte die Bergbahn ein Baustein Ihrer Tour werden, 
+                können Sie folgender Empfehlung folgen. In knapp zwei Stunden haben 
+                Sie inklusive Imbisses die Highlights des Bergbahnlandes entdeckt. 
+                Wenn Sie diese Tour zeitlich nach hinten schieben, 
+                könnten Sie anstelle des Mittagsimbisses ein Kaffeetrinken im 
+                Speisewagen einplanen.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>2 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/group.svg" />
+                  <span>FÜR <span style="font-size: 12px">G</span>RUPPEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+            <div class="karten carousel-boxes" > <!--Mittagstour für Gruppen-->
+              <h4 class="carousel-boxes-top">Mittagstour für Gruppen</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Sollte die Bergbahn ein Baustein Ihrer Tour werden und Sie möchten 
+                diese ab dem Mittag entdecken, dann können Sie folgender Empfehlung folgen. 
+                Alternativ können Sie am Nachmittag in Obstfelderschmiede mit einem 
+                Kaffeegedeck starten.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>2,25 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/group.svg" />
+                  <span>FÜR <span style="font-size: 12px">G</span>RUPPEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+            <div class="karten carousel-boxes" > <!--Auf Fröbel´s Spuren-->
+              <h4 class="carousel-boxes-top">Auf Fröbel's Spuren</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Friedrich Fröbel ist der Begründer des Kindergartens und hier im Schwarzatal geboren. 
+                Begeben Sie sich auf eine spielerische Entdeckungsreise.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>6 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/pair.svg" />
+                  <span>FÜR <span style="font-size: 12px">F</span>AMILIEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+            <div class="karten carousel-boxes" > <!--Bahnerlebnis für Groß und Klein-->
+              <h4 class="carousel-boxes-top">Bahnerlebnis für Groß und Klein</h4>
+              <hr />
+              <p class="carousel-boxes-text">
+                Bei dieser Ausflugstour schlagen die Herzen von allen kleinen und großen Eisenbahnfans höher. 
+                Schwarzatalbahn, Bergbahn und die Flachstrecke sowie das Erlebnismuseum 
+                Maschinarium stehen auf dem Programm und sind mit dem Kinderwagen zugänglich.
+              </p>
+              <div class="carousel-boxes-bottom">
+                <div class="carousel-boxes-bottom-time">
+                  <img class="box" src="Logos/Icons/clock.svg"/>
+                  <span>5 H</span>
+                </div>
+                <div class="carousel-boxes-bottom-amount">
+                  <img class="box" src="Logos/Icons/pair.svg" />
+                  <span>FÜR <span style="font-size: 12px">F</span>AMILIEN</span>
+                </div>
+              </div>
+              <span class="informationen"> <span style="font-size: 14;">M</span>EHR <span style="font-size: 14">I</span>NFORMATIONEN >></span>
+              <p></p>
+            </div>
+
+          </div>
+
+          <div id="next" style="right: 0px;">
+             <img style="width: 70%;" src="Logos/Icons/arrow-right.svg">
+          </div>
+        </section>
+        
+      </main>
+
+      <aside> <!-- seitenboxen -->
+        <div class="side-box" id="Bauarbeiten">
+          <div id="side-box-content">
+            <div id="side-box-picture">
+              <img src="Logos/Icons/Bauarbeiter.svg" />
+            </div>
+            <div id="side-box-info">
+              <span>Bauarbeiten</span>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo. eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua 
+              </p>
+            </div>
+          </div>
+          <button id="rar"><span>M</span>EHR <span>I</span>NFORMATIONEN</button>
+        </div>
+
+        <div class="side-box" id="Kontakt">
+          <div class="side-box-content" style="padding: 20px 20px 0px">
+            <img id="Rezeption" src="Logos/Icons/Rezeption.svg" />
+            <span id="Kontakt">Kontakt</span>
+            <p id="was">Oberweißbacher Berg- und Schwarzatalbahn</p>
+            <p id="ort">
+              An der Bergbahn 1<br />
+              98744 Schwarzatal<br /><span
+                >036705 201-32<br />info@oberweissbacher-bergbahn.com</span
+              >
+            </p>
+          </div>
+          <button id="rar" style="background-color: #284528">
+            <span>Z</span>UM <span>K</span>ONTAKTFORMULAR
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div id="bottom-inner">
+        <div class="bottom-content" id="1">
+          <p style="line-height: 16px; font-size: 13px; margin-bottom: 5px">
+            <strong
+              >DB RegioNetzVerkehrs GmbH <br />Oberweißbacher Berg-und
+              Schwarzatalbahn</strong
+            >
+          </p>
+          <p>An der Bergbahn 1<br />98744 Schwarzatal</p>
+        </div>
+        <div class="bottom-content" id="2">
+          <p>Kontakt<br />Zahlung & Versand<br />Widerrufsrecht<br />AGB</p>
+        </div>
+        <div class="bottom-content" id="3">
+          <p>Datenschutz<br />Social Media<br />Impressum</p>
+        </div>
+        <div class="bottom-content" id="Logos">
+          <a href="https://www.thueringer-wald.com/" style="width: 100%; margin-right: 10px;">
+            <img style="width: 100%;"
+                 src="Logos/Icons/Thüringer Wald.jpg"/>
+          </a>
+          <a href="https://www.thueringen-entdecken.de/" style="width: 100%;">
+            <img src="Logos/Icons/Thüringen.jpg" style="width: 100%"/>
+          </a>
+          
+          
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
