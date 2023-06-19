@@ -1,16 +1,19 @@
 footer {
-  width: 100%;
-  border-top: 2px #8ab5c5 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
+  width: 100%;
+  padding: 30px 0px;
+  border-top: 2px #8ab5c5 solid;
 }
 div#bottom-inner {
   max-width: 1400px;
-  @media all and (max-width: 1400px) {
-    max-width: 1200px
-  }
-  margin: 30px auto;
+  flex: 1;
   display: flex;
+  padding: 0px 20px;
   justify-content: space-between;
+  column-gap: 10px;
 
 }
 div#bottom-inner p {
@@ -21,7 +24,65 @@ div.bottom-content {
   line-height: 20px;
   max-width: 360px;
 }
+
 div#Logos {
   display: flex;
   align-items: center;
+  
+}
+div#logos img{
+  max-width: 250px;
+  min-width: 100px;
+}
+div.bottom-content a{
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 12px;
+  font-weight: 600;
+}
+div.bottom-content a:hover{
+  color: #B3D234 ;
+}
+
+@media  (min-width: 1201px ) and (max-width: 1399px){
+  div#bottom-inner {
+    max-width: 1200px;
+  }
+}
+@media  (min-width: 992px) and (max-width: 1200px) {
+  div#eins{
+    max-width: 250px;
+  }
+}
+@media  (min-width: 771px) and (max-width: 991px) {
+  div#eins{
+    max-width: 210px;
+  }
+}
+@media  (min-width: 576px) and  (max-width: 770px){
+  div#bottom-inner{
+    flex-wrap: wrap;
+  }
+  div#eins{
+    max-width: 200px;
+  }
+  div#Logos {
+    min-width: 220px;
+    margin: 0px auto;
+   
+  }
+  
+}
+@media  (max-width: 576px){
+  div#bottom-inner{
+    flex-direction: column;
+  }
+  div#eins{
+    margin-bottom: 20px;
+  }
+  div#Logos {
+    min-width: 220px;
+    margin: 0px auto;
+  }
 }

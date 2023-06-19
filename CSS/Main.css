@@ -3,8 +3,8 @@ main#page {
 }
 main#information { 
   width: 70%;
-  border: 1px green solid;
   padding: 0px 20px;
+  overflow: visible;
 }
 div#willkommen {
   margin-bottom: 30px;
@@ -20,7 +20,6 @@ h2 {
 p.text{
   max-width: 95%;
   line-height: 23px;
-  border: 1px red dotted;
 }
 h3 {
   font-size: 23px;
@@ -72,10 +71,7 @@ section.karten.slick-carousel{
   height: fit-content;
   max-width: 1050px;
   margin: 30px auto; 
-  display: flex !important;
-  align-items: center;
-  border: 1px red dotted;
-
+  display: flex;
 }
 div.karten.carousel-slider {
   width: 100%;
@@ -83,16 +79,13 @@ div.karten.carousel-slider {
 }
 div.karten.carousel-slider .slick-track{
   height: 500px;
-  display: flex ;
   overflow: hidden;
-  align-items: stretch;
-  margin: 0;
 }
 
 div.karten.carousel-boxes{
   display: block;
   height: 400px;
-  width: 200px;
+  width: 244.5;
   padding: 20px;
   border-radius: 20px;
   border-bottom-right-radius: 0px;
@@ -104,17 +97,16 @@ div.karten.carousel-boxes{
   opacity: 0.4;
   position: relative;
   top: 2px;
-  right: -360px;
+  right: -460px;
 }
 .karten.slick-current + .karten.slick-active + .karten.slick-slide {
  /* rechter hintergrund */
-  right: 50px;
+  right: 130px;
 }
 div.karten.carousel-boxes.slick-active{
   /*mitte*/
   opacity: 1;
   top: 40px;
-  position: relative;
   left: 0.47%;
   z-index: 2;
 }
@@ -180,26 +172,30 @@ span.informationen{
 @media  (min-width: 1201px ) and (max-width: 1399px){
   
   div.karten.carousel-boxes{  
-    height: 430px;
     width: 190px;
-    right: -380px;
+    margin: 0px 10px;
+    /* linker Hintergrund */
+    right: -430px !important;
   }
   .karten.slick-current + .karten.slick-active + .karten.slick-slide {
-    right: 40px;
+    /* rechter Hintergrund */
+    right: 80px !important;
   }
   div.karten.carousel-boxes.slick-active{
+    /* mitte */
     left: 0.50%;
   }
 }
 
 @media  (min-width: 992px) and (max-width: 1200px) {
   div.karten.carousel-boxes{
+    margin: 0px 10px;
     /* linker Hintergrund */
-    right: -380px;
+    right: -420px;
   }
   .karten.slick-current + .karten.slick-active + .karten.slick-slide {
     /*rechter Hintergrund*/
-    right: 30px;
+    right: 80px;
   }
   div.karten.carousel-boxes.slick-active{
    /*mitte*/
@@ -208,6 +204,10 @@ span.informationen{
   }
   h4.carousel-boxes-top{
     font-size: 19px;
+  }
+  div#prev, #next  {
+    width: 50px;
+
   }
 }
 
@@ -222,14 +222,13 @@ span.informationen{
     height: 470px;
   }
   div.karten.carousel-boxes{
-    width: 200px;
-    margin: 0px 10px;
+    margin: 0px 15px;
   /* linker hintergrund */
-    right: -440px;
+    right: -445px;
   }
   .karten.slick-current + .karten.slick-active + .karten.slick-slide {
    /* rechter hintergrund */
-    right: 0px;
+    right: 115px;
   }
   div.karten.carousel-boxes.slick-active{
     /* vordere */
@@ -238,39 +237,47 @@ span.informationen{
   h4.carousel-boxes-top{
     font-size: 19px;
   }
+  div#prev, #next  {
+    width: 50px;
+  }
+  
 }
 
-@media  (min-width: 576px) and  (max-width: 770px){
+@media  (min-width: 576px) and  (max-width: 771px){
   main#page {
     flex-direction: column;
   }
   main#information {
-      width: auto;
+    width: auto;
   }
   nav button {
-  padding-left: 10px;
+    padding-left: 10px;
   }
   nav button img {
     width: 30%;
   }
-  div.karten.carousel-slider .slick-track{
-    left: -25%
-  } 
   div.karten.carousel-boxes{
+    margin: 0px 30px;
   /* linker hintergrund */
-    top: 2px;
-    right: -60px;
+    right: -465px;
   }
   .karten.slick-current + .karten.slick-active + .karten.slick-slide {
    /* rechter hintergrund */
-    right: 440px;
+    right: 125px;
   }
   div.karten.carousel-boxes.slick-active{
-    left: -0.52%;
+    /* vordere */
+    top: 20px;
   }
+  .slick-list.draggable  .slick-track{
+    left: 6.0% !important;
+  }
+
   h4.carousel-boxes-top{
     font-size: 19px;
- 
+  }
+  div#prev, #next  {
+    width: 50px;
   }
 }
 

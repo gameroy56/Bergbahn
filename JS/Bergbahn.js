@@ -1,52 +1,13 @@
 $(document).ready(function(){
-  //Karuselle
-  $('.karten.carousel-slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    arrows: true,
-    variableWidth: true,
-    prevArrow: $(".karten #prev"),
-    nextArrow: $(".karten #next"),
-    responsive:[
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-
-    
-    
-  });
-  $('#bilder-carousel').slick({
-    speed: 700,
-    autoplay: false,
-    autoplaySpeed: 7000,
-    draggable: false,
-    prevArrow: $("#graphic #prev"),
-    nextArrow: $("#graphic #next")
-  })
-
-
-  $(window).on("load resize", updateImage, cardSize);
-  //kartenbreite responsive
+  //kartenbreite responsiv
   function cardSize() {
     var screenWidth = $(window).width()
     var trackWidth = $(".carousel-slider").width();
     var cardWidth;
-    if (screenWidth >= 770){
+    if (screenWidth >= 771){
       cardWidth = trackWidth /4
     }
-    else if (screenWidth <= 770 && screenWidth > 576){
+    else if (screenWidth <= 771 && screenWidth > 576){
       cardWidth = trackWidth /3;
     }
     else if (screenWidth <= 576){
@@ -57,7 +18,6 @@ $(document).ready(function(){
     $(".karten.carousel-boxes").css("width", cardWidth + "px")
   }
   //standart bild verschiedene größen
- 
   function updateImage() {
     var images = [
       "Logos/Bilder/main/view-groesser-gleich-1400px.png",
@@ -83,8 +43,44 @@ $(document).ready(function(){
     $("#standart").attr("src", images[imageIndex])
 
   }
-  $(window).on("load resize", updateImage);
-  
+  $(window).on("load resize", updateImage, cardSize);
+
+  //Karuselle
+  $('.karten.carousel-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: true,
+    draggable: true,
+    variableWidth: true,
+    prevArrow: $(".karten #prev"),
+    nextArrow: $(".karten #next"),
+    responsive:[
+      {
+        breakpoint: 771,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+  $('#bilder-carousel').slick({
+    speed: 700,
+    autoplay: false,
+    autoplaySpeed: 7000,
+    draggable: false,
+    prevArrow: $("#graphic #prev"),
+    nextArrow: $("#graphic #next")
+  })
+
   //nav-info-popup
   $(document).click(function(e){
     var popup= $(e.target).next(".info-overlay").add($(e.target).children(".bottom-text-arrow"));

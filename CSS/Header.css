@@ -1,6 +1,5 @@
 div#head {
   display: flex;
-  justify-content: space-between;
   height: 65px;
 }
 div#logo_box {
@@ -26,6 +25,7 @@ div#logo_inner {
 div#left {
   display: flex;
   justify-content: space-between;
+  margin-right: auto;
 }
 div.left-icons {
   text-align: center;
@@ -59,6 +59,7 @@ div#cabrio {
 }
 div#cloud {
   color: #8ab5c5;
+  cursor: default;
 }
 div#webcam {
   color: #cf7027;
@@ -66,22 +67,21 @@ div#webcam {
 
 div#right {
   display: flex;
-  flex: 1fr;
   align-items: center;
   margin: 5px 0px;
 }
-div.right-icons {
+a.right-icons {
   margin-right: 10px;
   align-items: center;
   font-weight: bold;
   display: inherit;
   transition: all 200ms;
 }
-div.right-icons:hover {
+a.right-icons:hover {
   cursor: pointer;
   color: #699333;
 }
-div.right-icons img {
+a.right-icons img {
   height: 40px;
 }
 
@@ -94,12 +94,8 @@ div#graphic {
 img.graphic {
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
-img#standart{
-  object-fit: fill;
-  object-position: center;
-}
+
 div#bilder-carousel{
   width: 100%;
   height: 100%;
@@ -217,6 +213,7 @@ div.bottom-text-hover-img {
   width: 27px;
   height: 27px;
   margin-top: 6px;
+  z-index: -500;
 }
 button.bottom-text:hover div.bottom-text-hover-img {
   opacity: 1;
@@ -245,6 +242,7 @@ nav.info-overlay{
   border: 2px white solid;
   background-color: white;
   padding: 30px;
+  column-gap: 40px;
   padding-right: 3%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
   z-index: 999;
@@ -272,10 +270,9 @@ img#info-overlay-sun{
 
 div.info-overlay-info{
   width: 100%;
-  margin-right: 40px;
 }
-div.info-overlay-info-inside{
-  height: 30px;
+a.info-overlay-info-inside{
+  height: fit-content;
   width: fit-content;
   min-width: 170px;
   display: flex;
@@ -286,14 +283,15 @@ div.info-overlay-info-inside{
   color: #284528;
   font-weight: bold;
   font-size: 14px;
+
   cursor: pointer;
 }
-div.info-overlay-info-inside-head{
+a.info-overlay-info-inside-head{
   cursor: text;
   height: fit-content;
+  width: 100%;
   font-weight: bold;
-  font-size: 20px;
-  white-space: nowrap;
+  font-size: 18px;
   color: #699333;
   line-height: 27px;
 
@@ -314,11 +312,11 @@ div.info-overlay-info-inside-con img{
   opacity: 0;
   transition: all 300ms;
 }
-div.info-overlay-info-inside:hover div.info-overlay-info-inside-con {
+a.info-overlay-info-inside:hover div.info-overlay-info-inside-con {
   background-color: rgba(179, 210, 52, 0.2);
 }
 
-div.info-overlay-info-inside:hover div.info-overlay-info-inside-con img{
+a.info-overlay-info-inside:hover div.info-overlay-info-inside-con img{
   opacity: 1;
 
 }
@@ -381,7 +379,7 @@ a.bottom-links{
     display: none;
   }
   div#graphic {
-    height: 400px;
+    height: 370px;
   }
   div#bottom {
     display: block;
@@ -499,7 +497,7 @@ a.bottom-links{
   }
 }
 
-@media  (min-width: 576px) and  (max-width: 768px){
+@media  (min-width: 576px) and  (max-width: 771px){
   div#head {
     height: 0px;
   }
@@ -524,7 +522,7 @@ a.bottom-links{
     display: none;
   }
   div#graphic {
-    height: 350px;
+    height: 340px;
   }
   div#yellow {
     height: 90px;
@@ -676,6 +674,15 @@ a.bottom-links{
   img#standart{
     object-fit: cover;
   }
+  .obj-p-center{
+    object-position: center;
+  }
+  .obj-p-left{
+    object-position: -40px ;
+  }
+  .obj-p-right{
+    object-position: 70%;
+  }
   div#yellow {
     height: 65px;
     border-left: 140px #dbb622 solid;
@@ -803,6 +810,13 @@ a.bottom-links{
   }
   div.info-overlay-info{
     width: 70%;
+  }
+  div.info-overlay-info-inside{
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  div.info-overlay-info-inside{
+    white-space: normal;
   }
   div.info-overlay-info-inside-con {
    left: -30px;

@@ -13,9 +13,9 @@
     <link 
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap"
         rel="stylesheet">
-    <script src="extras/jquery-3.6.3.js"></script>
-    <script src="extras/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="extras/slick/slick.css">
+        <link rel="stylesheet" href="/extras/slick/slick.css">
+    <script src="/extras/jquery-3.6.3.js"></script>
+    <script src="/extras/slick/slick.min.js"></script>
    
     <script src="JS/Bergbahn.js"></script>
   </head>
@@ -26,7 +26,7 @@
     <header>
       <div id="head">
         <div id="left">
-          <div class="left-icons" id="Cabrio">
+          <div  class="left-icons" id="Cabrio" onclick="location.href = 'https://www.thueringerbergbahn.com/bergbahnland/attraktionen/bergbahn_drei_wagen/'">
             <img class="left-icons" src="Logos/Icons/cabrio.svg" />
             <span class="left-icons">Cabrio fährt nicht</span>
             <div
@@ -38,7 +38,7 @@
             <img class="left-icons" src="Logos/Icons/clouds.svg" />
             <span class="left-icons">16° C, Sonnig</span>
           </div>
-          <div class="left-icons" id="Webcam">
+          <div class="left-icons" id="Webcam" onclick="location.href = 'https://www.thueringerbergbahn.com/webcam/'">
             <img class="left-icons" src="Logos/Icons/webcam.svg" />
             <span class="left-icons">Webcam</span>
             <div
@@ -49,20 +49,20 @@
         </div>
 
         <div id="right">
-          <div class="right-icons">
+          <a class="right-icons" href="https://www.thueringerbergbahn.com/shop/warenkorb/">
             <div><img src="Logos/Icons/bag.svg" /></div>
             <div class="right-icons-text">Warenkorb</div>
-          </div>
-          <div class="right-icons">
+          </a>
+          <a class="right-icons" href="tel:03670520134">
             <div><img src="Logos/Icons/phone.svg" /></div>
             <div class="right-icons-text">036705 20134</div>
-          </div>
-          <div class="right-icons">
+          </a>
+          <a class="right-icons" href="https://www.facebook.com/thueringerbergbahn/">
             <img src="Logos/Icons/facebook.svg" />
-          </div>
-          <div class="right-icons">
+          </a>
+          <a class="right-icons" href="https://www.instagram.com/thueringerbergbahn/">
             <img src="Logos/Icons/instagram.svg" />
-          </div>
+          </av>
         </div>
       </div>
       <div id="logo_box">
@@ -71,8 +71,6 @@
             <img id="logo_img" src="Logos/Icons/Bergbahn Logo.svg" />
           </a>
         </div>
-        
-        
       </div>
       <div id="graphic">
         <div id="prev" style="left: 25px;">
@@ -80,12 +78,12 @@
         </div>
 
         <div id="bilder-carousel">
-          <img class="graphic" id="standart" src="Logos/Bilder/main/view-groesser-gleich-1400px.png"/>
-          <img class="graphic" src="Logos/Bilder/2_Bahnen.jpg"/>
+          <img class="graphic obj-p-center" id="standart"  src="Logos/Bilder/main/view-groesser-gleich-1400px.png"/>
+          <img class="graphic obj-p-left" src="Logos/Bilder/2_Bahnen.jpg"/>
           <img class="graphic" src="Logos/Bilder/alter_zug.jpg"/>
           <img class="graphic" src="Logos/Bilder/cabrio_und_normal.jpg"/>
-          <img class="graphic" src="Logos/Bilder/Vater_Kind.jpg"/>
-          <img class="graphic" src="Logos/Bilder/Wegschilder.jpg"/>
+          <img class="graphic obj-p-center" src="Logos/Bilder/Vater_Kind.jpg"/>
+          <img class="graphic obj-p-right" src="Logos/Bilder/Wegschilder.jpg"/>
           <img class="graphic" src="Logos/Bilder/Zug.jpg"/>
         </div>
        
@@ -117,32 +115,60 @@
             <div class="info-overlay-X">
               <img src="Logos/Icons/cross.svg">
             </div>
+
             <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+
             <div class="info-overlay-info">
-              <div class="info-overlay-info-inside">
+
+              <a  href="https://www.thueringerbergbahn.com/besucher/besucherinfo/streckennetz_OBS" 
+                  class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                  <img src="Logos/Icons/conductor.svg">
                 </div>
               Streckennetz
-              </div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+              </a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/fahrplan" 
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Fahrplan</div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+               </div>
+               Fahrplan</a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/tarife" 
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Tarife</div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+               </div>
+               Tarife</a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/anfahrt_parkplaetze" 
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Anreise</div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+               </div>
+               Anreise</a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/barrierefreiheit"
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Barrierefreiheit</div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+               </div>
+               Barrierefreiheit</a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/hunde"
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Hunde</div>
-              <div class="info-overlay-info-inside"><div class="info-overlay-info-inside-con">
+               </div>
+               Hunde</a>
+
+              <a href="https://www.thueringerbergbahn.com/besucher/besucherinfo/infomaterial"
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
                 <img src="Logos/Icons/conductor.svg">
-               </div>Infomaterial</div>
+               </div>
+               Infomaterial</a>
             </div>
   
           </nav>
@@ -160,117 +186,133 @@
             <div class="info-overlay-X">
               <img src="Logos/Icons/cross.svg">
             </div>
+
             <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+
             <div class="info-overlay-info">
   
-              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+              <a class="info-overlay-info-inside info-overlay-info-inside-head">
                 Attraktionen
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/rundgang360"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Rundgang durch das Bergbahnland
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/bergbahn_drei_wagen"
+                 class="info-overlay-info-inside">
                <div class="info-overlay-info-inside-con">
                  <img src="Logos/Icons/conductor.svg">
                 </div>Bergbahn mit drei Wagen
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/flachstrecke_olitae"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Flachstrecke / Ölitätenwagen
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/schwarzatalbahn"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Schwarzatahlbahn / Fürstenkutsche
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/maschinarium"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Maschinarium
-              </div>
+              </a>
   
-                <div class="info-overlay-info-inside">
-                  <div class="info-overlay-info-inside-con">
-                    <img src="Logos/Icons/conductor.svg">
-                  </div>Fröbelwald
-                </div>
+              <a href="https://www.thueringerbergbahn.com/bergbahnland/attraktionen/froebelwald"
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Fröbelwald
+              </a>
               </div>
   
             <div class="info-overlay-info">
   
-                <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                <a class="info-overlay-info-inside info-overlay-info-inside-head">
                   Gastronomie
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/bergbahnland/gastronomie/talstation"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                   </div>Die Talstation
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/bergbahnland/gastronomie/speisewagen"
+                   class="info-overlay-info-inside">
                  <div class="info-overlay-info-inside-con">
                    <img src="Logos/Icons/conductor.svg">
                   </div>Speisewagen
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/bergbahnland/gastronomie/bahnhofladen"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                   </div>Bahnhofladen
-                </div>
+                </a>
                </div>
   
             <div class="info-overlay-info">
   
-                  <div class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
+                  <a class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
                     Schwarzatal entdecken
-                  </div>
+                  </a>
       
-                  <div class="info-overlay-info-inside">
+                  <a href="https://www.thueringerbergbahn.com/bergbahnland/schwarzatalentdecke/uebersicht"
+                     class="info-overlay-info-inside">
                     <div class="info-overlay-info-inside-con">
                       <img src="Logos/Icons/conductor.svg">
                     </div>Übersicht
-                  </div>
+                  </a>
       
-                  <div class="info-overlay-info-inside">
+                  <a href="https://www.thueringerbergbahn.com/bergbahnland/schwarzatalentdecke/veranstaltungen"
+                     class="info-overlay-info-inside">
                    <div class="info-overlay-info-inside-con">
                      <img src="Logos/Icons/conductor.svg">
                     </div>Veranstaltungen der Region
-                  </div>
+                  </a>
                </div>
   
             <div class="info-overlay-info">
   
-                    <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                    <a class="info-overlay-info-inside info-overlay-info-inside-head">
                       Touren
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/bergbahnland/touren/fuerfamilien"
+                       class="info-overlay-info-inside">
                       <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
                       </div>Für Familien
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/bergbahnland/touren/fuerpaare"
+                       class="info-overlay-info-inside">
                      <div class="info-overlay-info-inside-con">
                        <img src="Logos/Icons/conductor.svg">
                       </div>Für Paare
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/bergbahnland/touren/fuergruppen"
+                       class="info-overlay-info-inside">
                       <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
                       </div>Für Gruppen
-                    </div>
+                    </a>
   
             </div>
           </nav>
@@ -289,56 +331,64 @@
             <div class="info-overlay-X">
               <img src="Logos/Icons/cross.svg">
             </div>
+
             <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+
             <div class="info-overlay-info">
   
-              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+              <a class="info-overlay-info-inside info-overlay-info-inside-head">
                 Bergbahnfeste
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/veranstaltungen/bergbahnfeste/nostalgietag"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Nostalgietag
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/veranstaltungen/bergbahnfeste/Jubilaeumsfest"
+                 class="info-overlay-info-inside">
                <div class="info-overlay-info-inside-con">
                  <img src="Logos/Icons/conductor.svg">
                 </div>Bergbahnjubiläum
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/veranstaltungen/bergbahnfeste/lichterglanz"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Lichterglanz
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/veranstaltungen/bergbahnfeste/AdventanderBergbahn"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Advent an der Bergbahn
-              </div>
+              </a>
   
             </div>
   
             <div class="info-overlay-info" style="margin-right: 70px;">
   
-                <div class="info-overlay-info-inside info-overlay-info-inside-head">
-                  Veranstaltungen in der <br> Region
-                </div>
+                <a class="info-overlay-info-inside info-overlay-info-inside-head">
+                  Veranstaltungen in der Region
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/veranstaltungen/veranstaltungen_region/veranstaltungskalender"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                   </div>Veranstalungskalender
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/veranstaltungen/veranstaltungen_region/tagdersommerfrische"
+                   class="info-overlay-info-inside">
                  <div class="info-overlay-info-inside-con">
                    <img src="Logos/Icons/conductor.svg">
                   </div>Tag der Sommerfrische
-                </div>
+                </a>
   
               </div>
           </nav>
@@ -356,143 +406,163 @@
             <div class="info-overlay-X">
               <img src="Logos/Icons/cross.svg">
             </div>
+
             <img id="info-overlay-sun" src="Logos/Icons/sun.svg">
+
             <div class="info-overlay-info">
   
-              <div class="info-overlay-info-inside info-overlay-info-inside-head">
+              <a class="info-overlay-info-inside info-overlay-info-inside-head">
                 Bergbahn
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/geschichte"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Geschichte
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/dr_wolfgangbaeseler"
+                 class="info-overlay-info-inside">
                <div class="info-overlay-info-inside-con">
                  <img src="Logos/Icons/conductor.svg">
                 </div>Dr. Wolfgang Bäseler
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/funktionsweise"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Funktionsweise
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/fahrzeuge"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Fahrzeuge
-              </div>
+              </a>
   
-              <div class="info-overlay-info-inside">
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/rekonstruktionderbergbahn"
+                 class="info-overlay-info-inside">
                 <div class="info-overlay-info-inside-con">
                   <img src="Logos/Icons/conductor.svg">
                 </div>Rekonstruktion der Bergbahn
-              </div>
+              </a>
   
-                <div class="info-overlay-info-inside">
-                  <div class="info-overlay-info-inside-con">
-                    <img src="Logos/Icons/conductor.svg">
-                  </div>Historische Bilder
-                </div>
+              <a href="https://www.thueringerbergbahn.com/ueberobs/bergbahn_1/historischebilder"
+                 class="info-overlay-info-inside">
+                <div class="info-overlay-info-inside-con">
+                  <img src="Logos/Icons/conductor.svg">
+                </div>Historische Bilder
+             </a>
               </div>
   
             <div class="info-overlay-info">
   
-                <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                <a class="info-overlay-info-inside info-overlay-info-inside-head">
                   Flachstrecke
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/ueberobs/flachstrecke/geschichte"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                   </div>Geschichte
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/ueberobs/flachstrecke/triebwagen" 
+                   class="info-overlay-info-inside">
                  <div class="info-overlay-info-inside-con">
                    <img src="Logos/Icons/conductor.svg">
                   </div>Triebwagen
-                </div>
+                </a>
     
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/ueberobs/flachstrecke/sonderfahrzeuge"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                   </div>Sonderfahrzeuge
-                </div>
+                </a>
   
-                <div class="info-overlay-info-inside">
+                <a href="https://www.thueringerbergbahn.com/ueberobs/flachstrecke/historischebilder"
+                   class="info-overlay-info-inside">
                   <div class="info-overlay-info-inside-con">
                     <img src="Logos/Icons/conductor.svg">
                    </div>Historische Bilder
-                 </div>
+                 </a>
   
                </div>
   
             <div class="info-overlay-info">
   
-                  <div class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
+                  <a class="info-overlay-info-inside info-overlay-info-inside-head" style="width: 205px;">
                     Schwarzatalbahn
-                  </div>
+                  </a>
       
-                  <div class="info-overlay-info-inside">
+                  <a href="https://www.thueringerbergbahn.com/ueberobs/schwarzatalbahn/geschichte"
+                     class="info-overlay-info-inside">
                     <div class="info-overlay-info-inside-con">
                       <img src="Logos/Icons/conductor.svg">
                     </div>Geschichte
-                  </div>
+                  </a>
       
-                  <div class="info-overlay-info-inside">
+                  <a href="https://www.thueringerbergbahn.com/ueberobs/schwarzatalbahn/triebwagen"
+                     class="info-overlay-info-inside">
                    <div class="info-overlay-info-inside-con">
                      <img src="Logos/Icons/conductor.svg">
                     </div>Triebwagen
-                  </div>
+                  </a>
   
-                  <div class="info-overlay-info-inside">
+                  <a href="https://www.thueringerbergbahn.com/ueberobs/schwarzatalbahn/historischefotos"
+                     class="info-overlay-info-inside">
                     <div class="info-overlay-info-inside-con">
                       <img src="Logos/Icons/conductor.svg">
                      </div>Historische Bilder
-                   </div>
+                   </a>
   
                </div>
   
             <div class="info-overlay-info">
   
-                    <div class="info-overlay-info-inside info-overlay-info-inside-head">
+                    <a class="info-overlay-info-inside info-overlay-info-inside-head">
                       Weiteres
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/kontakt"
+                       class="info-overlay-info-inside">
                       <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
                       </div>Kontakt
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/gaestebefragung"
+                       class="info-overlay-info-inside">
                      <div class="info-overlay-info-inside-con">
                        <img src="Logos/Icons/conductor.svg">
                       </div>Gästebefragung
-                    </div>
+                    </a>
         
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/foerdervereinobs"
+                       class="info-overlay-info-inside">
                       <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
                       </div>Förderverein OBS
-                    </div>
+                    </a>
   
-                    <div class="info-overlay-info-inside">
+                    <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/bergbahnkoenigin"
+                       class="info-overlay-info-inside">
                       <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
-                       </div>Bergbahnkönigin
-                     </div>
+                      </div>Bergbahnkönigin
+                    </a>
   
-                     <div class="info-overlay-info-inside">
-                      <div class="info-overlay-info-inside-con">
+                    <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/nachhaltigkeit"
+                       class="info-overlay-info-inside">
+                     <div class="info-overlay-info-inside-con">
                         <img src="Logos/Icons/conductor.svg">
-                       </div>Nachhaltigkeit
-                     </div>
+                      </div>Nachhaltigkeit
+                    </a>
   
             </div>
           </nav>
@@ -526,7 +596,7 @@
             ist die steilste Standseilbahn zum Transport normalspuriger
             Eisenbahnwagen und ein richtiges Kleinod. Im Bergbahnland gibt es
             jedoch noch viel mehr zu entdecken: Die elektrifizierte Flachstrecke
-            mit Olitätenwagen, die Schwarzatalbahn durch das wildromantisch
+            mit Olitätenwagen, die Schwarzatalbahn durch das wildromantische
             Schwarzatal, den Fröbelwald und das Maschinarium.
           </p>
         </div>
@@ -553,7 +623,7 @@
 
         <section class="karten slick-carousel">
 
-          <div id="prev" style="left: 20px;">
+          <div id="prev" style="left: 0px;">
             <img style="width: 70%;" src="Logos/Icons/arrow-left.svg">
           </div>
 
@@ -722,7 +792,7 @@
 
           </div>
 
-          <div id="next" style="right: 0px;">
+          <div id="next" style="right: -20px;">
              <img style="width: 70%;" src="Logos/Icons/arrow-right.svg">
           </div>
         </section>
@@ -770,20 +840,26 @@
 
     <footer>
       <div id="bottom-inner">
-        <div class="bottom-content" id="1">
+        <div class="bottom-content" id="eins">
           <p style="line-height: 16px; font-size: 13px; margin-bottom: 5px">
             <strong
-              >DB RegioNetzVerkehrs GmbH <br />Oberweißbacher Berg-und
+              >DB RegioNetzVerkehrs GmbH Oberweißbacher Berg-und
               Schwarzatalbahn</strong
             >
           </p>
-          <p>An der Bergbahn 1<br />98744 Schwarzatal</p>
+          <p>An der Bergbahn 1</p>
+          <p>98744 Schwarzatal</p>
         </div>
-        <div class="bottom-content" id="2">
-          <p>Kontakt<br />Zahlung & Versand<br />Widerrufsrecht<br />AGB</p>
+        <div class="bottom-content" id="zwei">
+          <a href="https://www.thueringerbergbahn.com/ueberobs/weiteres/kontakt/">Kontakt</a> <br>
+          <a href="https://www.thueringerbergbahn.com/Zahlung_und_Versand/">Zahlung & Versand</a> <br>
+          <a href="https://www.thueringerbergbahn.com/widerrufsrecht/">Widerrufsrecht</a> <br>
+          <a href="https://www.thueringerbergbahn.com/agb/">AGB</a> <br>
         </div>
-        <div class="bottom-content" id="3">
-          <p>Datenschutz<br />Social Media<br />Impressum</p>
+        <div class="bottom-content" id="drei">
+          <a href="https://www.thueringerbergbahn.com/datenschutz/">Datenschutz</a> <br>
+          <a href="https://www.thueringerbergbahn.com/datenschutz_social_media/">Datenschutz Social Media</a> <br>
+          <a href="https://www.thueringerbergbahn.com/impressum/">Impressum</a> <br>
         </div>
         <div class="bottom-content" id="Logos">
           <a href="https://www.thueringer-wald.com/" style="width: 100%; margin-right: 10px;">

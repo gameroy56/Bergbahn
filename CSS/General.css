@@ -7,6 +7,12 @@ body {
   align-items: center;
   -webkit-tap-highlight-color: transparent;
 }
+a{
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
 @media (min-width: 1400px) {
   header,main#page {
     width: 1400px;
@@ -42,7 +48,4 @@ img{
 }
 .sichtbar_block{
   display: block !important;
-}
-footer{
-  display: none !important;
 }
